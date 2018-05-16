@@ -20,3 +20,9 @@ No message available
 >原因：项目入口启动类SpringApplication未置于最外层
 
 >解决方法：这个类要放在groupId对应的包下，其他自己新建的包都应该是它的一个子包，例：启动类位于com.zx;其他项目类是com.zx.demo.
+
+# springboot整合Mybatis application.properties 没有提示
+
+>解决方法
+1. Help->Eclipse Marketplace
+2. 安装spring tools   popular下
