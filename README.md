@@ -26,3 +26,9 @@ No message available
 >解决方法
 1. Help->Eclipse Marketplace
 2. 安装spring tools   popular下
+
+# 整合mybatis运行提示 Access denied for user ''@'localhost' to database
+
+>原因：application.properties中登陆用户名密码配置错误
+
+>解决方法：将spring.datasource.data-username=root改为spring.datasource.username =root，密码同理
