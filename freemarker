@@ -1,0 +1,5 @@
+springBoot集成freemarker
+
+1.control类返回页面
+1>@controler 可返回页面
+2>@restContrller
