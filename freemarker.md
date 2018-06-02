@@ -40,6 +40,18 @@
 <#else>  
 她的绝招是：蛊毒~~  
 </#if>  
+
+>迭代map集合：
+<#list weaponMap?keys as key>  
+key--->${key}<br/>  
+value----->${weaponMap[key]!("null")}  
+<#--   
+fremarker 不支持null, 可以用！ 来代替为空的值。  
+其实也可以给一个默认值    
+value-----${weaponMap[key]?default("null")}  
+还可以 在输出前判断是否为null  
+<#if weaponMap[key]??></#if>都可以  
+-->  
 3. include：该标签用于导入文件用的。
 ><#include "include.html"/>  
 
